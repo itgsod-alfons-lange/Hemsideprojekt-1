@@ -1,0 +1,61 @@
+html {
+    background: url("http://www3.idrottonline.se/ImageVaultFiles/id_595409/cf_69694/fotbollsplan_large.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    font-family:"tahoma";
+}
+
+#header{
+    margin:auto;
+    width:300px;
+    height:80px;
+    text-align:center;
+    line-height:80px;
+    font-size:40px;
+    background-color: rgba(100,100,100,0.5);
+}
+
+#content_container{
+    width:100%;
+    margin:10px auto;
+    background-color: rgba(45,45,45,0.3);
+}
+
+#info {
+    width: calc(70% - 40px);
+    padding:20px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    float:left;
+    font-size:25px;
+
+}
+#tabs{
+    width:30%;
+    float:left;
+}
+
+.nav_tab{
+    width:60%;
+    height:30px;
+    background-color:red;
+    float:right;
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+    line-height:30px;
+    color:black;
+    text-decoration: none;
+    box-shadow:  0 0 5px 2px rgba(0,0,0,1);
+    -moz-box-shadow:  0 0 5px 2px rgba(0,0,0,1);
+    -webkit-box-shadow:  0 0 5px 2px rgba(0,0,0,1);(0,0,0,0.5);
+    -o-box-shadow:  0 0 5px 2px rgba(0,0,0,1);
+}
+
+.current_tab{
+    background-color:darkred;
+}
