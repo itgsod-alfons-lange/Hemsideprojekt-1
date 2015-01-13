@@ -1,5 +1,5 @@
 html {
-    background: url("http://www3.idrottonline.se/ImageVaultFiles/id_595409/cf_69694/fotbollsplan_large.JPG") no-repeat center center fixed;
+    background: url("../img/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,7 +17,7 @@ body{
     text-align:center;
     line-height:80px;
     font-size:40px;
-    background-color: rgba(100,100,100,0.5);
+    background-color: rgba(255,255,255,0.8);
 }
 
 #content_container{
@@ -29,7 +29,7 @@ body{
 #info {
     width: calc(70% - 40px);
     padding:20px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.75);
     border-radius: 5px;
     float:left;
     font-size:25px;
@@ -40,8 +40,44 @@ body{
     float:left;
 }
 
+#menu{
+    width: calc(70% - 40px);
+    padding:20px;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 5px;
+    float:left;
+}
+
+.menu_category{
+    font-size:35px;
+}
+
+.menu_list{
+    display:none;
+}
+
+.menu_item{
+    position: relative;
+}
+
+.menu_header{
+    font-weight: bold;
+    font-size:18px;
+    float:left;
+    margin-right: 10px;
+}
+.menu_price{
+    font-style: italic;
+    font-size:18px;
+    width:auto
+    float:left;
+}
+.menu_description{
+    font-size:16px;
+}
+
 .nav_tab{
-    width:60%;
+    width:90%;
     height:30px;
     background-color:red;
     float:right;
