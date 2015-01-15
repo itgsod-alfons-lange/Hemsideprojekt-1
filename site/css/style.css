@@ -8,44 +8,56 @@ html {
 
 body{
     font-family:"tahoma";
+    margin:0;
 }
 
 #header{
     margin:auto;
-    width:300px;
+    width:50%;
     height:80px;
     text-align:center;
     line-height:80px;
     font-size:40px;
     background-color: rgba(255,255,255,0.8);
+    border-radius: 0px 0px 5px 5px;
 }
 
 #content_container{
     width:100%;
-    margin:10px auto;
+    margin:10px;
     background-color: rgba(45,45,45,0.3);
 }
 
-#info {
+#tabs{
+    width:30%;
+    float:left;
+}
+
+#info, #menu, #reserve, #gametimes {
     width: calc(70% - 40px);
     padding:20px;
     background-color: rgba(255,255,255,0.75);
     border-radius: 5px;
     float:left;
     font-size:25px;
-
-}
-#tabs{
-    width:30%;
-    float:left;
 }
 
-#menu{
-    width: calc(70% - 40px);
-    padding:20px;
-    background-color: rgba(255,255,255,0.75);
-    border-radius: 5px;
+#overview_img{
+    width:100%;
+}
+
+#reserve_header, #reserve_droplists{
     float:left;
+    height:100%;
+    display:table;
+}
+#reserve_droplists select{
+    color:red;
+    display:table-cell;
+    width:100px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
 }
 
 .menu_category{
@@ -58,6 +70,8 @@ body{
 
 .menu_item{
     position: relative;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .menu_header{
