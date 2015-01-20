@@ -14,9 +14,6 @@
 </div>
 <div id="content_container">
     <div id="reserve">
-        <div id="overview">
-            <img id="overview_img" src="../img/overview.png">
-        </div>
         <div id="reserve_form">
             <div id="reserve_header">Boka:</div>
             <div id="reserve_droplists">
@@ -28,8 +25,19 @@
                     <option value="3">4</option>
                     <option value="4">5</option>
                 </select>
-                <select id="select_number_people"></select>
+                <select id="select_number_people">
+                    <option value="-1">Antal pers</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                </select>
             </div>
+        </div><br/>
+        <div id="overview">
+            <img id="overview_img" src="../img/overview.png">
         </div>
     </div>
 
@@ -40,6 +48,5 @@
         <a class="nav_tab" href="../matchtider">Matchtider</a>
     </div>
 </div>
-
 </body>
 </html>

@@ -6,6 +6,17 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#display_map").click(function(){
+                $("#map_container").show();
+            });
+            $("#map_container").click(function(){
+                $(this).hide();
+            })
+        });
+    </script>
 </head>
 <body>
 
@@ -37,7 +48,8 @@
         <br/><br/>
         Hitta hit:
         <br/>
-        Tranavägen 57
+        <a href="#" id="display_map">Tranavägen 57</a>
+
     </div>
 
     <div id="tabs">
@@ -45,6 +57,12 @@
         <a class="nav_tab" href="./meny">Meny</a>
         <a class="nav_tab" href="./reservering">Reservering</a>
         <a class="nav_tab" href="./matchtider">Matchtider</a>
+    </div>
+</div>
+
+<div id="map_container">
+    <div id="map">
+        <iframe width="600" height="450" frameborder="0" style="border:0; display:block; margin:auto;" src="https://www.google.com/maps/embed/v1/place?q=Stockholm%2C%20Sweden&key=AIzaSyB_3HgL5IfiMa0wgufiDCH0ZcWxZFI7lWA"></iframe>
     </div>
 </div>
 
