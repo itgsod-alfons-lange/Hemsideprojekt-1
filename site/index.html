@@ -1,7 +1,7 @@
 <!--INFO-->
 
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
@@ -10,6 +10,7 @@
     <script>
         $(document).ready(function(){
             $("#display_map").click(function(){
+                $("#map_frame").attr("src","https://www.google.com/maps/embed/v1/place?q=Tranavägen+57,+Svartsjö,+Sweden&key=AIzaSyB_3HgL5IfiMa0wgufiDCH0ZcWxZFI7lWA&zoom=15")
                 $("#map_container").show();
             });
             $("#map_container").click(function(){
@@ -26,29 +27,23 @@
 <div id="content_container">
     <div id="info">
 
-        Tranan är en kvarterskrog som erbjuder över 80 sorters öl och fler än 120 sorters whiskey, där du kan välja att träffa kompisgänget på en afterwork, äta en god middag eller heja på ditt favoritlag.
-        <br/><br/>
-        Vi har även stämningen för att bädda för en fantastisk utekväll, så varför inte börja hos oss?
-        <br/><br/>
-        Låt våra skickliga kockar reta dina smaklökar med utsökt mat tillagad med de allra bästa råvarorna. Vi gör aldrig avkall på kvalitet och hos oss hittar du mat att njuta av. Många av våra drycker är direkt handplockade för att passa vår matmeny. Vi är säkra på att du hittar det som passar dina smakkunskaper. De utvalda dryckerna är inköpta av vår kunniga personal som ser fram emot att få servera er under besöket på Bryggeriet. Allt för att ni ska få en perfekt kväll.
-        <br/><br/>
-        Maten tillagas med omsorg av våra duktiga kockar och ger en härlig smakupplevelse.
-        <br/><br/>
-        Öppettider:
-        <br/>
-        Mån - Tor: 10-22
-        <br/>
-        Fre - Sön: 12-01
-        <br/><br/>
-        Kontakt:
-        <br/>
-        08 555 55 555
-        <br/>
-        Tranan@mail.com
-        <br/><br/>
-        Hitta hit:
-        <br/>
-        <a href="#" id="display_map">Tranavägen 57</a>
+        <p>Tranan är en kvarterskrog som erbjuder över 80 sorters öl och fler än 120 sorters whiskey, där du kan välja att träffa kompisgänget på en afterwork, äta en god middag eller heja på ditt favoritlag.</p>
+
+        <p>Vi har även stämningen för att bädda för en fantastisk utekväll, så varför inte börja hos oss?</p>
+
+        <p>Låt våra skickliga kockar reta dina smaklökar med utsökt mat tillagad med de allra bästa råvarorna. Vi gör aldrig avkall på kvalitet och hos oss hittar du mat att njuta av. Många av våra drycker är direkt handplockade för att passa vår matmeny. Vi är säkra på att du hittar det som passar dina smakkunskaper. De utvalda dryckerna är inköpta av vår kunniga personal som ser fram emot att få servera er under besöket på Bryggeriet. Allt för att ni ska få en perfekt kväll.</p>
+        <p>Maten tillagas med omsorg av våra duktiga kockar och ger en härlig smakupplevelse.</p>
+
+        <p>Öppettider:</p>
+        <p>Mån - Tor: 10-22</p>
+        <p>Fre - Sön: 12-01</p>
+
+        <p>Kontakt:</p>
+        <p>08 555 55 555</p>
+        <p><a href="mailto:tranan@mail.com">tranan@mail.com</a></p>
+
+        <p>Hitta hit:</p>
+        <p>Tranavägen 57 <a id="display_map">Karta</a></p>
 
     </div>
 
@@ -62,7 +57,7 @@
 
 <div id="map_container">
     <div id="map">
-        <iframe width="600" height="450" frameborder="0" style="border:0; display:block; margin:auto;" src="https://www.google.com/maps/embed/v1/place?q=Stockholm%2C%20Sweden&key=AIzaSyB_3HgL5IfiMa0wgufiDCH0ZcWxZFI7lWA"></iframe>
+        <iframe width="600" height="450" frameborder="0" id="map_frame"></iframe>
     </div>
 </div>
 

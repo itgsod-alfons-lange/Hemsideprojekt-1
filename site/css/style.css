@@ -42,6 +42,15 @@ body{
     font-size:25px;
 }
 
+#display_map{
+    text-decoration: underline;
+    color:deepskyblue;
+}
+
+#display_map:hover{
+    cursor: pointer;
+}
+
 #map_container{
     position:fixed;
     left:0px;
@@ -61,12 +70,44 @@ body{
     bottom:0px;
 }
 
+#map_frame{
+    border:0px;
+    display: block;
+    margin: auto;
+}
+
 #overview_img{
     width:100%;
 }
 
-#reserve_droplists{
+#reserve_form *:focus{
+    outline:0px;
+}
 
+#reserve_form select{
+    background-color: rgba(50,50,50,0.9);
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    color:#fefefe;
+    line-height: 17px;
+    border: 0;
+    border-radius: 0;
+    height: 32px;
+    -webkit-appearance: none;
+}
+
+#post_reserve{
+    height:32px;
+    border-radius:0px;
+    border:0px;
+    background-color: rgba(50,50,50,0.9);
+    font-size:16px;
+    color:#fefefe;
+}
+
+#post_reserve:hover{
+    background-color: rgba(0,155,0,0.9);
 }
 
 .game_time_object{
